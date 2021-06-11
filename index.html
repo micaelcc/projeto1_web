@@ -6,30 +6,29 @@
         <link rel="stylesheet" href="./assets/css/home.css" />
     </head>
     <body>
-        <div class="header">                
-                <nav class="navbar">
-                    <img class="logo" src="./assets/img/logo.png" alt="logo" />
+        <div class="header">
+            <nav class="navbar">
+                <img class="logo" src="./assets/img/logo.png" alt="logo" />
 
-                    <ul class="botoes_nav" id="nav_links">
-                        <li>
-                            <a href="#" class="op_nav">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="op_nav">Product</a>
-                        </li>
-                        <li>
-                            <a href="#" class="op_nav">Contact Us</a>
-                        </li>
-                    </ul>
-                    <a class="op_nav" href="#">
-                        <button>Login</button>
-                    </a>
-                    <a class="register op_nav" href="#">
-                        <button>Register</button>
-                    </a>
-                </nav>
-                
-            
+                <ul class="botoes_nav" id="nav_links">
+                    <li>
+                        <a href="#" class="op_nav">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="op_nav">Product</a>
+                    </li>
+                    <li>
+                        <a href="#" class="op_nav">Contact Us</a>
+                    </li>
+                </ul>
+                <a class="op_nav" href="#">
+                    <button>Login</button>
+                </a>
+                <a class="register op_nav" href="#">
+                    <button>Register</button>
+                </a>
+            </nav>
+
             <div class="row">
                 <div class="column text">
                     <p id="title-banner">
@@ -48,5 +47,42 @@
                 </div>
             </div>
         </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Disciplina: Desenvolvimento de Software para Web</h3>
+                <h4>Autores: Micael Lima e Bruno Rebouças</h4>
+            </div>
+        </div>
+
+        <footer>
+            <p id="text-footer">Projeto 01 Web</p>
+            <a class="link_btn_nav">
+                <button id="myBtn">Creditos</button>
+            </a>
+        </footer>
+
+        <script>
+            var modal = document.getElementById("myModal");
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>
