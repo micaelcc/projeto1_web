@@ -31,25 +31,23 @@ button {
     font-size: 16px;
 }
 
-nav {
-    margin-left: 27%;
-}
-
 .logo {
+    display: inline-block;
     cursor: pointer;
-    width: 8vw;
+    margin-right: 27%;
+    width: 150px;
 }
 
-.btn_nav {
+.botoes_nav {
     list-style: none;
 }
 
-.btn_nav li {
+.botoes_nav li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.btn_nav li a {
+.botoes_nav li a {
     transition: all 0.3s ease 0s;
 }
 
@@ -126,3 +124,36 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
+
+
+@media screen and (max-width: 740px) {
+    .row{
+        display: grid;
+        justify-content: center;
+    }
+
+    .row p{
+        margin:1px;
+        padding: 1px;
+    }
+
+    .column{
+        width: 100%;
+        padding: 5px;
+    }
+
+    #description-banner{
+        width: 90%;
+    }
+
+    #title-banner{
+        font-size: 40px;
+    }
+
+    #img-banner{
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+

@@ -6,29 +6,30 @@
         <link rel="stylesheet" href="./assets/css/home.css" />
     </head>
     <body>
-        <div class="header">
-            <div class="navbar">
-                <img class="logo" src="./assets/img/logo.png" alt="logo" />
-                <nav>
-                    <ul class="btn_nav">
+        <div class="header">                
+                <nav class="navbar">
+                    <img class="logo" src="./assets/img/logo.png" alt="logo" />
+
+                    <ul class="botoes_nav" id="nav_links">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" class="op_nav">Home</a>
                         </li>
                         <li>
-                            <a href="#">Product</a>
+                            <a href="#" class="op_nav">Product</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#" class="op_nav">Contact Us</a>
                         </li>
                     </ul>
+                    <a class="op_nav" href="#">
+                        <button>Login</button>
+                    </a>
+                    <a class="register op_nav" href="#">
+                        <button>Register</button>
+                    </a>
                 </nav>
-                <a class="login" href="#">
-                    <button>Login</button>
-                </a>
-                <a class="register" href="#">
-                    <button>Register</button>
-                </a>
-            </div>
+                
+            
             <div class="row">
                 <div class="column text">
                     <p id="title-banner">
@@ -42,7 +43,7 @@
                         <button>Order now</button>
                     </a>
                 </div>
-                <div class="column">
+                <div id="img-banner" class="column">
                     <img src="./assets/img/banner.png" />
                 </div>
             </div>
