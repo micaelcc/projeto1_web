@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title>Projeto 01 Web</title>
+        <title>Homeb</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./assets/css/home.css" />
     </head>
@@ -18,7 +18,9 @@
                         <a href="#" class="op_nav">Product</a>
                     </li>
                     <li>
-                        <a href="Contatos_Profissional.html" class="op_nav">Contact Us</a>
+                        <a href="Contatos_Profissional.html" class="op_nav"
+                            >Contact Us</a
+                        >
                     </li>
                 </ul>
                 <a class="op_nav" href="#">
@@ -53,18 +55,20 @@
             <div class="Titulo-video">
                 <h1>A single place for yout Jersey!</h1>
             </div>
-            <div class="description-video"></div>
+            <div class="description-video">
                 <p class="paragrafo">
-                    We will help you to safe your jersey preventing them from common 
+                    We will help you to safe your jersey preventing them from
+                    common
                 </p>
-                <p class="paragrafo">damage, such as mold-patches ad moths holes.
+                <p class="paragrafo">
+                    damage, such as mold-patches ad moths holes.
                 </p>
             </div>
             <div class="img-Video">
-                <img src="./assets/img/video.png">
+                <img src="./assets/img/video.png" />
             </div>
-            
-        </div> <!--Fim Container Meio-->
+        </div>
+        <!--Fim Container Meio-->
 
         <div class="Container-Extras">
             <div class="Titulo-Extras">
@@ -74,41 +78,92 @@
             <div class="Dif-Services">
                 <div class="Titulo-Service-1">
                     <h2>Framed your Jersey.</h2>
-                    <p>In our selection frame, you can choose different types of material and different colour.</p>
+                    <p>
+                        In our selection frame, you can choose different types
+                        of material and different colour.
+                    </p>
                 </div>
                 <div class="img-Service-1">
-                    <img src="./assets/img/Frame-your-jersey-css.svg">
+                    <img src="./assets/img/Frame-your-jersey-css.svg" />
                 </div>
             </div>
 
             <div class="Dif-Services">
                 <div class="img-Service-2">
-                    <img src="./assets/img/Wrapped-your-jersey-css.svg">
+                    <img src="./assets/img/Wrapped-your-jersey-css.svg" />
                 </div>
                 <div class="Titulo-Service-2">
                     <h2>Wrapped your jersey.</h2>
-                    <p>In our selection frame, you can choose different types of material and different colour.</p>
+                    <p>
+                        In our selection frame, you can choose different types
+                        of material and different colour.
+                    </p>
                 </div>
             </div>
 
             <div class="Dif-Services">
                 <div class="Titulo-Service-1">
                     <h2>Stored Your Jersey.</h2>
-                    <p>When you want your jersey back, we wil send it back within two days.</p>
+                    <p>
+                        When you want your jersey back, we wil send it back
+                        within two days.
+                    </p>
                 </div>
                 <div class="img-Service-1">
-                    <img src="./assets/img/Stored-your-jersey-css.svg">
+                    <img src="./assets/img/Stored-your-jersey-css.svg" />
                 </div>
             </div>
 
             <div class="Dif-Services">
                 <div class="img-Service-2">
-                    <img src="./assets/img/Send-your-jersey-css.svg">
+                    <img src="./assets/img/Send-your-jersey-css.svg" />
                 </div>
                 <div class="Titulo-Service-2">
                     <h2>Fast Delivery.</h2>
-                    <p>When you want your jersey back, we will send it back within two days.</p>
+                    <p>
+                        When you want your jersey back, we will send it back
+                        within two days.
+                    </p>
                 </div>
+            </div>
+        </div>
+
+        <h1 style="text-align: center; margin-top: 40px; margin-bottom: 50px;">
+            Deixe sua mensagem!
+        </h1>
+
+        <div class="deixar_mensagem">
+            <div>
+                <form>
+                    <input
+                        id="nome_recado"
+                        placeholder="Digite seu nome"
+                        type="text"
+                        name="nome"
+                    /><br />
+                    <textarea
+                        placeholder="Mensagem"
+                        rows="3"
+                        name="recado"
+                        id="recado"
+                    ></textarea
+                    ><br />
+                </form>
+
+                <input
+                    type="submit"
+                    id="btnSubmit"
+                    text="Enviar"
+                    onclick="new_message()"
+                />
+                <label id="confirmSubmit">Mensagem enviada!</label><br />
+                <label id="errorSubmit">Preencha todos os campos!</label>
+
+                <hr />
+
+                <div id="msgs"></div>
+
+                <hr id="final_hr" />
             </div>
         </div>
 
@@ -129,26 +184,7 @@
             </a>
         </footer>
 
-        <script>
-            var modal = document.getElementById("myModal");
-
-            var btn = document.getElementById("myBtn");
-
-            var span = document.getElementsByClassName("close")[0];
-
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
+        <script type="text/javascript" src="assets/js/modal-footer.js"></script>
+        <script type="text/javascript" src="assets/js/mural-home.js"></script>
     </body>
 </html>
