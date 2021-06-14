@@ -79,6 +79,15 @@
     list-style: none;
 }
 
+.Botao{
+    width: 467px;
+    height: auto;
+}
+.Botao button{
+    height: 25px; 
+    width: 465px;
+}
+
 .Botao button{
     height: 30px;
     border: none;
