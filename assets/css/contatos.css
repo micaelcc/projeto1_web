@@ -78,3 +78,10 @@
 .Email_Tel ul {
     list-style: none;
 }
+
+.Botao button{
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+}
