@@ -18,7 +18,7 @@
 }
 
 .Box_Entrada {
-    margin-top: 14%;
+    margin-top: 10%;
 
     width: 600px;
     height: 450px;
@@ -28,7 +28,6 @@
     /* superior | direita | inferior | esquerda */
     padding: 20px 60px 20px 60px;
 
-    margin-bottom: 5.2%;
 }
 
 .Box_Entrada h1 {
